@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Somya 🍓</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#2b0710;--bg2:#4a0d1c;--red:#e0112b;--wine:#7a1126;--berry:#ff4d6d;--pink:#ffc2cf;--brown:#6b3a2a;--cream:#fff1e6;--card:rgba(255,255,255,.08);--text:#fff1e6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2b0710;--bg2:#4a0d1c;--text:#fff1e6}}
+:root[data-theme="dark"]{--bg:#2b0710;--bg2:#4a0d1c;--text:#fff1e6}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--text);background:radial-gradient(circle at 20% 0%,var(--bg2),var(--bg) 60%) var(--bg);overflow-x:hidden;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+#fall{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.f{position:absolute;top:-40px;animation:drop linear infinite;opacity:.8}
+@keyframes drop{to{transform:translateY(110vh) rotate(360deg)}}
+section{position:relative;z-index:2;padding:70px 20px;max-width:900px;margin:auto;text-align:center}
+h1,h2{font-family:'Playfair Display',serif}
+.script{font-family:'Dancing Script',cursive;color:var(--pink);font-size:1.6rem}
+#hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+#hero h1{font-size:clamp(2.6rem,12vw,5.5rem);line-height:1.1;background:linear-gradient(90deg,#ff4d6d,#ffc2cf,#e0112b);-webkit-background-clip:text;background-clip:text;color:transparent;margin:10px 0}
+.big{font-size:5rem;animation:beat 1.4s infinite}
+@keyframes beat{50%{transform:scale(1.15)}}
+.btn{border:0;cursor:pointer;font:600 1rem 'Poppins';color:#fff;background:linear-gradient(135deg,var(--red),var(--wine));padding:14px 30px;border-radius:50px;box-shadow:0 8px 24px rgba(224,17,43,.45);margin-top:22px;transition:.2s}
+.btn:active{transform:scale(.95)}
+h2{font-size:clamp(1.8rem,7vw,2.8rem);margin-bottom:8px}
+.cd{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.cd div{background:var(--card);border:1px solid rgba(255,194,207,.3);border-radius:18px;padding:14px 10px;min-width:72px;backdrop-filter:blur(6px)}
+.cd b{display:block;font-size:1.8rem;font-family:'Playfair Display'}
+.cd span{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--pink)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+.chips span{background:linear-gradient(135deg,var(--wine),var(--red));padding:10px 18px;border-radius:30px;font-weight:400;box-shadow:0 4px 14px rgba(0,0,0,.35);transition:.2s;cursor:default}
+.chips span:hover{transform:translateY(-4px) rotate(-2deg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:26px}
+.card{background:var(--card);border:1px solid rgba(255,194,207,.25);border-radius:22px;padding:22px 12px;backdrop-filter:blur(6px);transition:.25s}
+.card:hover{transform:translateY(-6px) scale(1.03);background:rgba(224,17,43,.25)}
+.card i{font-style:normal;font-size:2.6rem;display:block}
+.card h3{font-size:1rem;margin:6px 0 2px;color:var(--pink)}
+.card p{font-size:.82rem;font-weight:300}
+.flip{perspective:800px;height:130px;cursor:pointer}
+.flip>div{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}
+.flip.on>div{transform:rotateY(180deg)}
+.flip .a,.flip .b{position:absolute;inset:0;border-radius:20px;display:flex;align-items:center;justify-content:center;padding:12px;backface-visibility:hidden;font-size:.9rem}
+.flip .a{background:linear-gradient(135deg,var(--wine),var(--brown));font-size:2.2rem}
+.flip .b{background:linear-gradient(135deg,var(--red),#a30b20);transform:rotateY(180deg)}
+.letter{background:var(--cream);color:#4a0d1c;border-radius:6px 6px 24px 24px;padding:30px 24px;text-align:left;box-shadow:0 20px 50px rgba(0,0,0,.5);position:relative;margin-top:24px;border-top:8px solid var(--red)}
+.letter p{margin-bottom:12px}
+.letter .script{color:var(--red)}
+.gift{font-size:6rem;cursor:pointer;display:inline-block;animation:wob 2s infinite}
+@keyframes wob{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+#surprise{display:none;margin-top:16px}
+footer{position:relative;z-index:2;text-align:center;padding:40px 20px 60px;color:var(--pink)}
+.pop{position:fixed;font-size:1.8rem;pointer-events:none;z-index:20;animation:pop 1.6s ease-out forwards}
+@keyframes pop{to{transform:translate(var(--x),var(--y)) rotate(540deg);opacity:0}}
+</style>
+</head>
+<body>
+<div id="fall"></div>
+
+<section id="hero">
+  <div class="big">🍓</div>
+  <p class="script">Happy Birthday to my</p>
+  <h1>Somya ♡<br>Puchi</h1>
+  <p>Meri bchi · Mera baby · Mera golgappa 💋</p>
+  <div class="cd" id="cd"></div>
+  <button class="btn" onclick="boom();document.getElementById('love').scrollIntoView()">Scroll for your surprise 🎀</button>
+</section>
+
+<section id="names">
+  <h2>My Favourite Names For You</h2>
+  <p class="script">tap karo, sab tumhare hi hain</p>
+  <div class="chips">
+    <span onclick="boom()">Puchi 🍓</span><span onclick="boom()">Meri bchi 🎀</span><span onclick="boom()">Mera baby 🤎</span>
+    <span onclick="boom()">Mera golgappa 🥟</span><span onclick="boom()">Mera bcha 🧸</span><span onclick="boom()">Golu molu baby 💕</span>
+  </div>
+</section>
+
+<section id="loves">
+  <h2>Things My Puchi Loves</h2>
+  <div class="grid">
+    <div class="card"><i>🍓</i><h3>Strawberries</h3><p>Sweet, red &amp; just like her</p></div>
+    <div class="card"><i>💄</i><h3>Lipgloss</h3><p>Always shiny, always pretty</p></div>
+    <div class="card"><i>❤️</i><h3>Red</h3><p>Her boldest, favourite shade</p></div>
+    <div class="card"><i>🍷</i><h3>Burgundy</h3><p>Classy, deep &amp; dreamy</p></div>
+    <div class="card"><i>🤎</i><h3>Brown</h3><p>Cozy like a warm hug</p></div>
+    <div class="card"><i>🥚</i><h3>Kinder Joy</h3><p>Her little happiness egg</p></div>
+    <div class="card"><i>🎬</i><h3>K-Dramas</h3><p>First love: Business Proposal 💼</p></div>
+    <div class="card"><i>🏋️‍♀️</i><h3>Gym</h3><p>Meri bchi, fit &amp; fearless</p></div>
+  </div>
+</section>
+
+<section id="reasons">
+  <h2>Why I Love You</h2>
+  <p class="script">flip the cards 💌</p>
+  <div class="grid">
+    <div class="flip" onclick="this.classList.toggle('on')"><div><div class="a">🍓</div><div class="b">Teri smile meri favourite cheez hai</div></div></div>
+    <div class="flip" onclick="this.classList.toggle('on')"><div><div class="a">💋</div><div class="b">Tu mujhe sabse zyada hasaati hai</div></div></div>
+    <div class="flip" onclick="this.classList.toggle('on')"><div><div class="a">🎬</div><div class="b">Tere saath K-drama dekhna = best date</div></div></div>
+    <div class="flip" onclick="this.classList.toggle('on')"><div><div class="a">💪</div><div class="b">Tu meri bchi hai, aur mujhe tujh par proud hai</div></div></div>
+    <div class="flip" onclick="this.classList.toggle('on')"><div><div class="a">🥟</div><div class="b">Tu meri golgappa, meri khushi</div></div></div>
+    <div class="flip" onclick="this.classList.toggle('on')"><div><div class="a">🤎</div><div class="b">Tere saath ghar jaisa lagta hai</div></div></div>
+  </div>
+</section>
+
+<section id="kdrama">
+  <h2>Our Story, Like a K-Drama 🎬</h2>
+  <p class="script">Business Proposal wali vibes</p>
+  <div class="grid">
+    <div class="card"><i>💘</i><h3>Episode 1</h3><p>Jab pehli baar mile</p></div>
+    <div class="card"><i>🤭</i><h3>Episode 2</h3><p>Pehli baar tu hasi</p></div>
+    <div class="card"><i>🥰</i><h3>Episode 3</h3><p>Tu meri ban gayi</p></div>
+    <div class="card"><i>♾️</i><h3>Final Episode</h3><p>Season 2, 3, 4… forever</p></div>
+  </div>
+</section>
+
+<section id="love">
+  <h2>A Letter For You</h2>
+  <div class="letter">
+    <p class="script">Dear Puchi,</p>
+    <p>Happy Birthday meri bchi! 🎂 Tu meri life ka sabse sweet part hai, bilkul strawberry ki tarah.</p>
+    <p>Tere saath har din ek K-drama jaisa lagta hai, bas isme sirf happy ending hai. Tu mere liye sabse special hai, mera baby, mera golgappa, mera sab kuch.</p>
+    <p>Is saal tujhe bahut saari lipgloss, Kinder Joy, khushiyan aur pyaar mile. Always shine, always smile.</p>
+    <p class="script">Forever yours, ❤️</p>
+  </div>
+</section>
+
+<section id="gift">
+  <h2>One Last Surprise</h2>
+  <div class="gift" onclick="openGift()">🎁</div>
+  <p>Tap the gift</p>
+  <div id="surprise">
+    <h2 style="color:var(--pink)">I love you, Somya! 💋</h2>
+    <p>Tu meri sabse beautiful strawberry hai 🍓<br>Meri jaan, meri puchi, mera sab kuch ❤️</p>
+  </div>
+</section>
+
+<footer>Made with 🍓 &amp; lots of love for Somya · 19 November</footer>
+
+<script>
+var E=['🍓','❤️','💄','🍷','🤎','🥚','🎀','💋'];
+var fall=document.getElementById('fall');
+for(var i=0;i<22;i++){var s=document.createElement('span');s.className='f';s.textContent=E[i%E.length];s.style.left=Math.random()*100+'%';s.style.fontSize=(16+Math.random()*20)+'px';s.style.animationDuration=(8+Math.random()*10)+'s';s.style.animationDelay=(-Math.random()*14)+'s';fall.appendChild(s)}
+function boom(x,y){x=x||innerWidth/2;y=y||innerHeight/2;for(var i=0;i<18;i++){var p=document.createElement('span');p.className='pop';p.textContent=E[i%E.length];p.style.left=x+'px';p.style.top=y+'px';p.style.setProperty('--x',(Math.random()*300-150)+'px');p.style.setProperty('--y',(Math.random()*-300-30)+'px');document.body.appendChild(p);setTimeout(function(q){q.remove()},1700,p)}}
+function openGift(){document.getElementById('surprise').style.display='block';boom();setTimeout(boom,400);setTimeout(boom,800)}
+function tick(){var n=new Date(),y=n.getFullYear(),t=new Date(y,10,19);if(t<new Date(y,n.getMonth(),n.getDate()))t=new Date(y+1,9,19);
+var el=document.getElementById('cd');
+if(n.getMonth()==10&&n.getDate()==19){el.innerHTML='<div style="padding:14px 24px"><b>🎂 Today is the day! 🎉</b></div>';return}
+var d=t-n,D=Math.floor(d/864e5),H=Math.floor(d/36e5)%24,M=Math.floor(d/6e4)%60,S=Math.floor(d/1e3)%60;
+el.innerHTML='<div><b>'+D+'</b><span>Days</span></div><div><b>'+H+'</b><span>Hours</span></div><div><b>'+M+'</b><span>Mins</span></div><div><b>'+S+'</b><span>Secs</span></div>'}
+tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
